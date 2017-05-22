@@ -1,0 +1,16 @@
+<div ng-show="!isAuthenticated"  ng-controller="LoginCtrl">
+	<div class="panel panel-default-login">
+	  <div class="panel-heading" translate>Login with Facebook</div>
+		<div class="panel-body">
+			<form ng-submit="login()" role="form">
+                <div class="input-group">
+                    <input class="form-control" data-ng-model="user.token" placeholder="Access Token" autocomplete="on">
+                    <span class="input-group-addon"><i class="fa fa-at fa-fw"></i></span>
+                </div>
+                <a href="https://developers.facebook.com/tools/explorer" target="_blank" class="error">Click here to get an access token</a>
+				<br />	<br />
+				<p class="text-center"><button type="submit" class="btn darkblue" translate>Log in</button></p>		
+			</form>
+        </div>
+	</div>
+</div>

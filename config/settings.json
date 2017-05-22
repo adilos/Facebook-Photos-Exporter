@@ -1,0 +1,11 @@
+{
+  "server": {
+    "node": {
+      "port": 2000
+    }
+  },
+  "facebook" : {
+  	"clientID"        : "158135561239451",
+    "clientSecret"    : "7d6557b1c8735c0fdb311f32b1c496d0"
+  }
+}

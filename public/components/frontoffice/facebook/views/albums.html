@@ -1,0 +1,24 @@
+<div class="row" style="margin-top:30px;">
+   <div class="col-sm-6 col-md-2"></div>
+   <div class="col-sm-6 col-md-8">
+   	    <div class="panel panel-default">
+		  <div class="panel-body">
+		     <div class="col-sm-6 col-md-6" ng-repeat="album in albums track by $index">
+			    <div class="thumbnail">
+			      <img src="img/album.png" alt="..." style="height: 150px">
+			      <div class="caption">
+			        <h3>{{album.name}}</h3>
+			        <p>
+			        	<a href="/facebook/albums/{{album.id}}/photos/{{album.name}}" class="btn btn-primary btn-sm" role="button">
+			        		<i class="fa fa-picture-o"></i> Show Photos
+			        	</a>
+			        </p>
+			      </div>
+			    </div>
+  			</div>
+		</div>
+	  </div>
+	 <pagination  total-items="pagination.totalItems" items-per-page="pagination.itemsPerPage" ng-model="pagination.currentPage">
+     </pagination>
+   </div>
+</div>
